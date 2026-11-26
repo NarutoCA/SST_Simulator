@@ -1,20 +1,20 @@
-# WALLY — security system simulator
+# SST — security system simulator
 
 Design an alarm system for a floor plan, arm it, then run intruders at it and
 see whether your design catches them. Use the house it ships with, or draw your
 own building.
 
-A single self-contained `.html` file — markup, styles and script in the same
+A single self-contained `SST_Simulator.html` file — markup, styles and script in the same
 document, no build step, no package manager, no server, no dependencies.
 
-**Run it:** open [`wally.html`](wally.html) in a browser (`file://` works), or
+**Run it:** open [`SST_Simulator.html`](SST_Simulator.html) in a browser (`file://` works), or
 serve the folder if you prefer — `python3 -m http.server` then browse to it.
 
 ---
 
 ## Architecture
 
-![Architecture of wally.html](architecture.svg)
+![Architecture of SST_Simulator.html](architecture.svg)
 
 The plan is the only thing that is really stored. Walls, the solids that block
 line of sight, the room graph and the scenario list are all *derived* from the
